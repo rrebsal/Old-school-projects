@@ -1,0 +1,12 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;;
+}
+
+div {
+    border: 3px;
+    border-color: black;
+    border-style: double;
+}

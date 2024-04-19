@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Koodikielitaidot</title>
+  <style>
+    /* Yleinen ulkoasustailaus */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    
+    /* Otsikon tyyli */
+    h1 {
+      color: #333;
+    }
+    
+    /* Kooditaidot lohkon tyyli */
+    .skill {
+      margin-bottom: 30px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Koodikielen otsikon tyyli */
+    h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    
+    /* Koodikielen kuvaustekstin tyyli */
+    p {
+      color: #666;
+    }
+    
+    /* Koodikielen logon koko */
+    .logo {
+      max-width: 100px;
+      height: auto;
+    }
+    
+    /* Tyyli progress-elementille */
+    progress {
+      width: 100%;
+      height: 10px;
+      border: none;
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    /* Tyyli progress-elementin täytölle (Webkit-selaimet) */
+    progress::-webkit-progress-value {
+      background-color: #4CAF50;
+      border-radius: 5px;
+    }
+    
+    /* Tyyli progress-elementin pohjalle (Webkit-selaimet) */
+    progress::-webkit-progress-bar {
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+    
+    /* Tyyli progress-elementin täytölle (Mozzila-selain) */
+    progress::-moz-progress-bar {
+      background-color: #4CAF50;
+      border-radius: 5px;
+    }
+    
+    /* Tyyli progress-elementin täytölle (IE-selain) */
+    progress::-ms-fill {
+      background-color: #4CAF50;
+      border-radius: 5px;
+    }
+    
+    /* Tyyli toisen tason otsikolle */
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Otsikko "Koodikielitaidoni" -->
+  <h1>Koodikielitaidoni</h1>
+  
+  <div class="skill">
+    <h3>HTML</h3>
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png">
+    <p>HTML (HyperText Markup Language) on merkintäkieli, jota käytetään verkkosivujen rakenteen ja sisällön kuvaamiseen.</p><br>
+    <p>Olen opiskellut HTML:ää siitä asti, kun aloitin ammattikoulun, joten olemme ehtineet jo opiskelemaan sitä jo jonkin verran. Olen käyttänyt HTML:ää sivustojen tekemiseen, ja sivusto pelejen tekemiseen.</p>
+    <progress value="80" max="100"></progress> <!-- Edistyminen 80% -->
+  </div>
+  
+  <div class="skill">
+    <h3>CSS</h3>
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png">
+    <p>CSS (Cascading Style Sheets) on tyylisivukieli, jota käytetään verkkosivujen ulkoasun määrittämiseen.</p><br>
+    <p>CSS on semi helppoa, joten uskoisin että osaan suurimman osan CSS:än ominaisuuksia. Olen käyttänyt CSS:ää sivustojen muotoiluun. </p>
+    <progress value="100" max="100"></progress> <!-- Edistyminen 100% -->
+  </div>
+  
+  <div class="skill">
+    <h3>JavaScript</h3>
+    <img class="logo" src="https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png">
+    <p>JavaScript on ohjelmointikieli, jota käytetään usein verkkosivujen interaktiivisuuden toteuttamiseen.</p><br>
+    <p>En ole ehtinyt opiskella JavaScriptiä vielä paljoa, mutta olen oppinut alkeet. JavaScriptillä olen muokannut sivustoja, ja tehnyt komentoja sivustolle.</p>
+    <progress value="35" max="100"></progress> <!-- Edistyminen 35% -->
+  </div>
+  
+  <h2>Koodikielet mitä haluaisin opiskella</h2>
+  
+  <div class="skill">
+    <h3>Python</h3>
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png">
+    <p>Python on yleiskäyttöinen ohjelmointikieli, joka on suosittu mm. web-kehityksessä, tietojenkäsittelytieteessä ja tekoälysovelluksissa.</p>
+    <progress value="0" max="100"></progress> <!-- Edistyminen 0% -->
+  </div>
+  
+  <div class="skill">
+    <h3>Java</h3>
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png">
+    <p>Java on laajalti käytetty, monipuolinen ohjelmointikieli, jota käytetään mm. sovelluskehityksessä ja mobiilikehityksessä.</p>
+    <progress value="0" max="100"></progress> <!-- Edistyminen 0% -->
+  </div>
+  
+</body>
+</html>

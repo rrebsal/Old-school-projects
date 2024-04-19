@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .letter {
+            font-size: 90px;
+            font-family: 'Comic Sans', cursive;
+            display: inline-block;
+            color: #999;
+            transition: all 250ms ease-in-out;
+        }
+
+        .letter.active {
+            transform: scale(5) rotate(360deg);
+            color: red;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>(¯´•._.• 𝐨𝔦ƳⓖเⓊ𝓗ﻮ丨ץ𝓣𝔤ι𝔲Ƴᵍ •._.•´¯)(¯´•._.• 𝐨𝔦ƳⓖเⓊ𝓗ﻮ丨ץ𝓣𝔤ι𝔲Ƴᵍ •._.•´¯)(¯´•._.• 𝐨𝔦ƳⓖเⓊ𝓗ﻮ丨ץ𝓣𝔤ι𝔲Ƴᵍ •._.•´¯) (¯´•._.• 𝐨𝔦ƳⓖเⓊ𝓗ﻮ丨ץ𝓣𝔤ι𝔲Ƴᵍ •._.•´¯)(¯´•._.• 𝐨𝔦ƳⓖเⓊ𝓗ﻮ丨ץ𝓣𝔤ι𝔲Ƴᵍ •._.•´¯)</h1>
+
+
+
+<script>
+
+    const h1 = document.querySelector("h1")
+    const text = h1.innerText.split('')
+    let html = ""
+
+    text.forEach(letter => {
+        let classes = ''
+        if(letter !== ' ') {
+       classes = 'letter js-letter' 
+    }
+        html = html + `<span class='${classes}'>${letter}</span>`
+    })
+
+    h1.innerHTML = html
+    const jsLetters = document.querySelectorAll(".js-letter")
+    jsLetters.forEach(node => {
+        node.addEventListener("mouseover", function(event) {
+            console.log(this.innerText)
+            this.classList.add("active")
+        })
+        node.addEventListener("mouseout", function(event) {
+            this.classList.remove("active")
+        })
+    })
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    right: 40%;
+}
+
+h3 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+body {
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(212,0,0,1) 100%);
+}
+
+

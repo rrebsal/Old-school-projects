@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Kato console</h1>
+
+    <style>
+  html, body {
+  height: 100%;
+  margin: 0
+}
+
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 140% auto; }
+  100% { background-size: 300% auto; }
+}
+
+#bkg{
+  width: 100%;
+  height: 100%;
+  animation: breath 4s linear infinite;
+  background: url("https://preview.redd.it/satans-smiling-face-in-the-dark-is-more-intriguing-and-v0-ymex4b1qwrla1.jpg?auto=webp&v=enabled&s=0c8366cd71c0b7178021f1eb2038ceef5ec95e69") center center no-repeat;
+}
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+}
+    </style>
+<div id="bkg"></div>
+    <script src="script.js"></script>
+</body>
+</html>

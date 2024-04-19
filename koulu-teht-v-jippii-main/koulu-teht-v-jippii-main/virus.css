@@ -1,0 +1,27 @@
+.float-right {
+  float: right;
+}
+
+
+@media(max-width: 640px;) {
+  .float-right {
+    float: initial;
+    width: 100%;
+    height: auto;
+     }
+  }
+
+body {
+  background-color: pink;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: brown;
+  }
+}
+
+img {
+  width: 50%;
+}
+   
